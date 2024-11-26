@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+body{
+	font-family: "Assistant", sans-serif;
+	/*	background-color: #f0f0f86e;*/
+}
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Roundness of the scrollbar handle */
+}
+ 
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #555; /* Color of the scrollbar handle on hover */
+    }
+ 
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Roundness of the scrollbar track */
+}
+/*Color Variable*/
+:root {
+  --primary-color: #02ABEF;
+  --secondary-color: #002060;
+  --background-color: #EDF2FC;
+  --text-color: #333;
+}
+/*Custom Style*/
+.py-10{
+	padding-top: 6rem !important;
+	padding-bottom: 6rem !important;
+}
+.py-15{
+	padding-top: 9rem !important;
+	padding-bottom: 9rem !important;
+}
+/*Button*/
+.btn-common{
+	background-color: #15A1DC !important;
+	color: #fff !important;
+	font-family: "Instrument Sans", sans-serif;
+	font-size: 17px;
+	border: 0;
+}
+.btn-common:hover{
+	background-color: #1289bb;
+	color: #fff;
+	font-family: "Instrument Sans", sans-serif;
+	font-size: 17px;
+	border:0;
+}
+/*Navigation*/
+.dropdown{
+	position: initial !important;
+}
+.dropdown-menu {
+	display: none;
+	position: absolute !important;
+	left: 0;
+	right: 0;
+	margin-top: 0;
+	padding: 20px;
+	height: 400px;
+	background-color: #fbfcff;
+	border: none;
+	min-width: 100% !important;
+	box-shadow: 0 10px 20px rgb(0 0 0 / 0%), 0 6px 6px rgb(0 0 0 / 4%);
+}
+.nav-item:hover > .nav-top-link {
+    background-color: #15A1DC;
+    color: #fff !important;
+    border-radius: 5px 5px 0 0;
+}
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+.navlistheading{
+	font-family: "Instrumnet Sans", sans-serif;
+	font-size: 20px;
+	color: #002060;
+	font-weight: 500;
+}
+.navlist li{
+	line-height: 40px;
+}
+.navlist li a{
+	font-size: 17px;
+	font-family: "Instrument Sans", sans-serif;
+	text-decoration: none;
+	color: #000;
+}
+.navlist li a:hover{
+	font-size: 17px;
+	font-family: "Instrument Sans", sans-serif;
+	text-decoration: underline;
+	color: #000;
+}
+.navlisttext{
+	font-size: 17px;
+	font-family: "Instrument Sans", sans-serif;
+	text-decoration: none;
+	color: #000;
+}
+.learn-link{
+	font-family: "Instrumnet Sans", sans-serif;
+	font-size: 18px;
+	color: #002060;
+	font-weight: 500;
+	text-decoration: none;
+}
+.learn-link:hover{
+	font-family: "Instrumnet Sans", sans-serif;
+	font-size: 18px;
+	color: #15A1DC;
+	font-weight: 500;
+	text-decoration: none;
+}
+.dropdown-menu .mega-row {
+  padding: 20px;
+  width:100%;
+}
+.nav-link i {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease;
+    }
+
+    /* Rotate arrow when hovering */
+    .nav-item:hover .nav-link i {
+      transform: translateY(-50%) rotate(180deg);
+    }
+.bgtop{
+    position: absolute;
+    z-index: -1;
+    width: 60rem;
+    top: 0;
+    right: 0;
+    animation: bounce 2s infinite alternate;
+}
+.prbgtop{
+    position: absolute;
+    z-index: -1;
+    width: 60rem;
+    top: 0;
+    left: 300px;
+    animation: bounce 2s infinite alternate;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+nav {
+  transition: all 0.3s ease;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff !important;
+  box-shadow: 0 4px 2px -2px #eeeeee;
+}
+.nav-link{
+	font-family: "Montserrat", sans-serif;
+    font-weight: 500 !important;
+    color: #000 !important;
+    margin: 0 20px;
+}
+.top-link{
+	color: #15A1DC;
+	text-decoration: none;
+	margin-left: 10px;
+	display: flex;
+	transition: 0.1s ease-in;
+}
+.top-link:hover{
+	transform: translateX(5%);
+	color: #15A1DC;
+	text-decoration: none;
+	margin-left: 10px;
+	display: flex;
+}
+/*Hero Section*/
+.main-title{
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 600;
+	font-size: 48px;
+}
+.main-subtitle{
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+}
+.main-paragraph{
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+}
+.hero-cards {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    perspective: 2000px;
+    transform-origin: 50%;
+    justify-content: center;
+    align-items: center;
+    min-width: 30vw;
+    max-width: 33vw;
+    height: 30vw;
+    display: flex;
+    position: relative;
+    top: 0;
+    transform: none;
+}
+.sectionfirst{
+	z-index: 100;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    perspective: 2000px;
+    perspective-origin: 100% 100%;
+    transform-style: preserve-3d;
+    background-color: #a6a6a640;
+    border-radius: .75rem;
+    padding: 1rem;
+    position: absolute;
+    inset: auto;
+    transform: scale(1) translate3d(0, 0, 100px) rotateX(32deg) rotateY(-17deg) rotateZ(17deg);
+}
+/*.anim-img{
+	-webkit-animation: bounces 2s infinite alternate;
+	transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -webkit-animation: bounces 2s infinite alternate;
+}*/
+/*Our Products*/
+.smallheading{
+	position: relative;
+}
+.smallheading::before{
+	background-color: var(--primary-color);
+    content: '';
+    width: 140px;
+    height: 25px;
+    border-radius: 60px 20px 60px 20px;
+    position: absolute;
+    left: -18px;
+    top: 0px;
+    z-index: -1;
+}
+.subheading{
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 1.25;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	border:0;
+	border-bottom: 4px solid var(--secondary-color) !important;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+	border:0;
+}
+.nav-tabs .nav-link{
+	border: 0 !important;
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: var(--secondary-color) !important;
+}
+.product-title{
+	font-family: Instrument Sans, sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+    line-height: 1.25;
+    color:var(--secondary-color);
+}
+.product-para{
+	font-size: 1rem;
+	line-height: 28px;
+	font-family: Instrument Sans, sans-serif;
+}
+.product-list li{
+	font-family: Instrument Sans, sans-serif;
+}
+.anim-sec{
+    position: absolute;
+    right: 0px;
+    top: -100px;
+    z-index: -1;
+    width: 44rem;
+    animation: bounce 2s infinite alternate;
+}
+/*choose us*/
+.choose-bg{
+	background-image: url(../images/globebg.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.choose-card{
+	background-image: url(../images/cardbg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 40px !important;
+}
+.choose-body{
+    padding: 30px 60px 40px 40px !important;
+}
+.choose-icon{
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.choose-title{
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	color: #002060;
+}
+.choose-para{
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #8e8e8e;
+}
+/*Footer*/
+.footer-bg{
+	background-image: url(../images/footerbg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.footer-link{
+	list-style: none;
+	padding:0;
+}
+.footer-link li a{
+	color: #fff;
+	text-decoration: none;
+	line-height: 35px;
+}
+.searchicon{
+	position: absolute;
+    top: 40px;
+    right: 10px;
+}
